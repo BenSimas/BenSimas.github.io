@@ -143,6 +143,11 @@
       	</p>
       <p><strong>Systems designed and implemented:</strong></p>
       <ul>
+		  <li>Frame-accurate animation-to-logic synchronization, ensuring hit detection, stamina consumption, and state transitions aligned precisely with animation timing.</li>
+		  <li>Custom kinematic character controller handling movement, ground detection, slope logic, gravity, and collision resolution without relying on Unity’s built-in controller.</li>
+		  <li>Hierarchical player state machine managing locomotion, attack chains, blocking, ranged combat, hit reactions, and dodge rolls with transition rules and interruption handling.</li>
+		  <li>Extended the base AI framework to support boss-exclusive mechanics without duplicating core logic.</li>
+		  <li>Event-driven audio system handling contextual SFX (footsteps, attacks, hit reactions) and dynamic music transitions between ambient, combat, and boss states using Unity’s AudioMixer.</li>
 		  <li>Stamina-based player combat controller featuring dodge i-frames, attack chains and animation-synced hit detection.</li>
 		  <li>Modular enemy AI using state-driven behavior systems supporting patrol, chase, attack sequences, stagger reactions, and boss-specific mechanics.</li>
       </ul>
@@ -150,6 +155,10 @@
       <p><strong>Technical challenges solved:</strong></p>
 		<ul>
 			<li>URP shadow atlas overflow by implementing runtime shadow activation based on player proximity, significantly reducing GPU pressure.</li>
+			<li>Designed scalable enemy architecture supporting multiple archetypes and bosses.</li>
+			<li>Systematically tuned per-animation hitbox activation and recovery windows to align damage registration with telegraph frames, 
+				improving combat readability and eliminating unfair early/late hit detection.</li>
+			<li>Addressed performance and visual clarity challenges by refining light baking settings, shadow resolution, and static batching to reduce GPU load while preserving atmospheric lighting.</li>
 		</ul>
 
 		<p><strong>Lessons I took from this project:</strong></p>
@@ -181,7 +190,7 @@
     ========================== -->
     <section class="box project">
       <header>
-        <h3>Conquest: Raid Warfare</h3>
+        <h3>Titanofonias</h3>
       </header>
 
       <span class="image featured">
@@ -214,8 +223,9 @@
 
 		<p><strong>Lessons I took from this project:</strong></p>
 		<ul>
-			<li>Importance of system decoupling and clean architecture.</li>
-			<li>Designing data-driven gameplay systems.</li>
+			<li>Learned to design state machines that remain readable and maintainable as feature complexity grows.</li>
+			<li>Significant render pipeline understanding.</li>
+			<li>Developing a custom kinematic controller reinforced how deceptively complex character physics can be, particularly when aiming for stability under edge cases.</li>
 		</ul>
 
       <div class="video">
@@ -287,6 +297,7 @@
 
 	</body>
 </html>
+
 
 
 
