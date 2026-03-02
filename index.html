@@ -143,13 +143,13 @@
       	</p>
       <p><strong>Systems designed and implemented:</strong></p>
       <ul>
-		  <li>Custom grid-based placement system with coordinate mapping, tile validation, and visual feedback.</li>
+		  <li>Stamina-based player combat controller featuring dodge i-frames, attack chains and animation-synced hit detection.</li>
+		  <li>Modular enemy AI using state-driven behavior systems supporting patrol, chase, attack sequences, stagger reactions, and boss-specific mechanics.</li>
       </ul>
 
       <p><strong>Technical challenges solved:</strong></p>
 		<ul>
-			<li>Identified and resolved performance bottlenecks caused by large numbers of active units by refactoring update loops, reworking expensive UI refreshes, and optimizing shadows and rendering.</li>
-			<li>Balance was a big issue throughout the development. Constant balancing of unit types and their stats and abilities was crucial to keeping the game healthy.</li>
+			<li>URP shadow atlas overflow by implementing runtime shadow activation based on player proximity, significantly reducing GPU pressure.</li>
 		</ul>
 
 		<p><strong>Lessons I took from this project:</strong></p>
@@ -287,6 +287,7 @@
 
 	</body>
 </html>
+
 
 
 
