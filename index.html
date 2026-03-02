@@ -175,23 +175,32 @@
         <img src="images/pic03.jpg" alt="Project 3 thumbnail" />
       </span>
 
-      <p><strong>What it is:</strong></p>
+      <p><strong>Conquest: Raid Warfare</strong></p>
 		<p>
-		Strategy Battle Simulator. My first shipped project.
-		<br>
-		The player is given selected units to strategically place around a grid in a "formation" to attack the opponent's side.
+			My first shipped project.
+			<br>
+			A strategy battle simulator where players strategically place units in formations before automated combat resolves against an opposing team.
       	</p>
-      <p><strong>What I built:</strong></p>
+      <p><strong>Systems designed and implemented:</strong></p>
       <ul>
-        <li>Variety of units with unique stats/skills</li>
-        <li>UI with extensive menus and submenus</li>
-        <li>Save/Load system of progress + unlockables</li>
+		  <li>Custom grid-based placement system with coordinate mapping, tile validation, and visual feedback.</li>
+		  <li>Data-driven unit system using ScriptableObjects to allow scalable addition of new units without modifying core combat logic.</li>
+		  <li>Ai with combat resolution systems handling targeting logic, attack patterns, attack resolutions and skills.</li>
+		  <li>UI with extensive menus, submenus and navigation.</li>
+		  <li>JSON-based persistence system for player progression, unlockables, and game state.</li>
+		  <li>Performance optimizations to support large numbers of active units.</li>
       </ul>
 
-      <p><strong>Problems solved:</strong></p>
+      <p><strong>Technical challenges solved:</strong></p>
 		<ul>
-			<li>With a lot of units on the screen, performance was becoming an issue. Due to this a lot of code was refactored as well as some lighting/rendering optimisation.</li>
-			<li>Balancing was a big part of the dev process. The game features a fair number of units each with their own stats.</li>
+			<li>Identified and resolved performance bottlenecks caused by large numbers of active units by refactoring update loops, reworking expensive UI refreshes, and optimizing shadows and rendering.</li>
+			<li>Balance was a big issue throughout the development. Constant balancing of unit types and their stats and abilities was crucial to keeping the game healthy.</li>
+		</ul>
+
+		<p><strong>Lessons I took from this project:</strong></p>
+		<ul>
+			<li>Importance of system decoupling and clean architecture.</li>
+			<li>Designing data-driven gameplay systems.</li>
 		</ul>
 
       <div class="video">
@@ -263,6 +272,7 @@
 
 	</body>
 </html>
+
 
 
 
