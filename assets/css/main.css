@@ -2482,3 +2482,15 @@ input, select, textarea {
 #projects .project ul li {
   padding-left: 0;
 }
+
+/* --- Project thumbnails: keep them from being massive --- */
+#projects .image.featured {
+  max-width: 500px;     /* pick a size you like */
+  margin: 0 auto 2em;   /* centers it */
+}
+
+#projects .image.featured img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
