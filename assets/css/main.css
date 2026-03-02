@@ -2449,7 +2449,7 @@ input, select, textarea {
 .video {
   position: relative;
   width: 100%;
-  max-width: 640px;       /* controls video size */
+  max-width: 360px;       /* controls video size */
   margin: 2em auto;       /* spacing + center */
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
