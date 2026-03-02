@@ -2444,25 +2444,44 @@ input, select, textarea {
 
 	}
 
-/* === Responsive Project Video === */
+/* =========================================================
+   PROJECTS: video embed sizing + spacing + bullet list fix
+   Works with ids: #projects, #about, #contact, #top
+   ========================================================= */
 
-.video {
+/* --- Video embed: responsive, centered, not huge --- */
+#projects .video {
   position: relative;
   width: 100%;
-  max-width: 360px;       /* controls video size */
-  margin: 2em auto;       /* spacing + center */
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  max-width: 640px;        /* resize */
+  margin: 1.5em auto 0;    /* space above the video */
+  padding-bottom: 56.25%;  /* 16:9 */
   height: 0;
 }
 
-.video iframe {
+#projects .video iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
 }
 
-#portfolio .actions {
-  margin-top: 1.5em; /* spacing between video and buttons */
+/* Space between the video and the buttons underneath it */
+#projects .video + ul.actions {
+  margin-top: 1.5em;
+}
+
+/* --- Bullet lists inside project boxes: align bullets with text nicely --- */
+/* The template centers text inside .box, which makes bullets look broken.
+   This forces lists to be left-aligned while still staying centered overall. */
+#projects .box ul {
+  display: inline-block;   /* keeps list block centered */
+  text-align: left;        /* fixes bullet/text alignment */
+  margin: 0 auto 2em auto; /* spacing under list */
+  padding-left: 1.25em;    /* bullet indent */
+}
+
+/* Remove the template's extra li padding that makes alignment weird */
+#projects .box ul li {
+  padding-left: 0;
 }
