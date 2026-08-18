@@ -39,14 +39,20 @@
 						</li>
 
 						<li>
-							<a href="#portfolio" id="portfolio-link">
+							<a href="#skills" id="skills-link">
+								<span class="icon solid fa-code">Skills</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#projects" id="projects-link">
 								<span class="icon solid fa-th">Projects</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="#about" id="about-link">
-								<span class="icon solid fa-user">About Me</span>
+								<span class="icon solid fa-user">About</span>
 							</a>
 						</li>
 
@@ -62,7 +68,7 @@
 
 			<div class="bottom">
 
-				<!-- Social Icons -->
+				<!-- Social Links -->
 				<ul class="icons">
 
 					<li>
@@ -109,103 +115,151 @@
 		<!-- Main -->
 		<div id="main">
 
+
 			<!-- Intro -->
 			<section id="top" class="one dark cover">
+
 				<div class="container">
 
 					<header>
 						<h2 class="alt">
-							Hi, I'm <strong>Ben Simas</strong>.
+							<strong>Ben Simas</strong>
 						</h2>
 
 						<p>
-							Self-taught Unity gameplay programmer focused on
-							<strong>C#</strong>, gameplay systems, AI and clean,
-							modular architecture.
+							Unity Gameplay Programmer focused on C#, gameplay systems,
+							AI and modular architecture.
 							<br />
-							I've independently designed and shipped
-							<strong>three complete games</strong>.
+							Self-taught developer with <strong>three independently
+							shipped games</strong>.
 						</p>
 					</header>
 
 					<footer>
-						<a href="#portfolio" class="button scrolly">
-							View My Projects
+						<a href="#projects" class="button scrolly">
+							View Projects
 						</a>
 					</footer>
 
 				</div>
+
 			</section>
 
 
-			<!-- Portfolio -->
-			<section id="portfolio" class="two">
+			<!-- Technical Skills -->
+			<section id="skills" class="two">
+
+				<div class="container">
+
+					<header>
+						<h2>Technical Skills</h2>
+					</header>
+
+					<div class="row skills">
+
+						<div class="col-6 col-12-mobile">
+
+							<h3>Programming</h3>
+
+							<p>
+								<strong>C#</strong> · Object-Oriented Programming ·
+								Gameplay Programming · State Machines · AI ·
+								Data-Driven Systems · Save/Load Systems ·
+								Debugging · Optimization
+							</p>
+
+						</div>
+
+						<div class="col-6 col-12-mobile">
+
+							<h3>Unity</h3>
+
+							<p>
+								Unity Engine · Physics · WheelColliders ·
+								Animation · UI · ScriptableObjects ·
+								Cinemachine · Timeline · Audio · URP
+							</p>
+
+						</div>
+
+					</div>
+
+					<div class="row skills">
+
+						<div class="col-6 col-12-mobile">
+
+							<h3>Tools</h3>
+
+							<p>
+								Git · GitHub · Visual Studio
+							</p>
+
+						</div>
+
+						<div class="col-6 col-12-mobile">
+
+							<h3>Development</h3>
+
+							<p>
+								Game Design · Level Design · Prototyping ·
+								Testing · Debugging · Release &amp; Publishing
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- Projects -->
+			<section id="projects" class="three">
+
 				<div class="container">
 
 					<header>
 						<h2>Projects</h2>
-
-						<p>
-							A selection of games I've independently developed and shipped
-							using Unity and C#.
-						</p>
 					</header>
 
 
-					<!-- FEATURED PROJECT -->
+					<!-- ==================================================
+					     FEATURED / LATEST GAME
+					================================================== -->
 
-					<article class="item">
-						<a href="#featured-project" class="image fit scrolly">
-							<img src="images/thirdgamephoto.png"
-								 alt="Featured game"
-								 />
-						</a>
+					<article class="project">
 
 						<header>
-							<h2>
-								<strong>THIRD GAME TITLE</strong>
-							</h2>
+							<h2>THIRD GAME TITLE</h2>
 
 							<p>
 								Combat Racing · Unity · C#
 							</p>
 						</header>
-					</article>
 
-
-					<!-- FEATURED PROJECT DETAILS -->
-
-					<div id="featured-project">
-
-						<header>
-							<h2>Featured Project</h2>
-
-							<p>
-								A combat-focused racing game built around vehicle physics,
-								customisation, AI and persistent progression.
-							</p>
-						</header>
+						<span class="image featured">
+							<img src="images/thirdgamephoto.png"
+								 alt="THIRD GAME TITLE" />
+						</span>
 
 						<p>
-							As a solo developer, I designed and implemented the game's
-							core gameplay systems, from physics-based vehicle handling
-							and combat to vehicle customisation, AI, progression and
-							save systems.
+							Combat-focused racing game built around vehicle physics,
+							customisation, weapons, AI and persistent progression.
+							Developed independently in Unity and C#.
 						</p>
-
-						<h3>Key Programming Work</h3>
 
 						<ul>
 							<li>
-								<strong>Vehicle simulation:</strong>
-								physics-based vehicle handling using Unity WheelColliders,
-								with driving systems designed around racing and combat.
+								<strong>Vehicle physics:</strong>
+								physics-based vehicle simulation using Unity
+								WheelColliders.
 							</li>
 
 							<li>
-								<strong>Vehicle customisation:</strong>
-								modular system allowing individual vehicle parts,
-								weapons and upgrades to be changed independently.
+								<strong>Vehicle systems:</strong>
+								modular customisation system supporting individual
+								vehicle parts, weapons and upgrades.
 							</li>
 
 							<li>
@@ -215,45 +269,37 @@
 
 							<li>
 								<strong>Combat:</strong>
-								weapon systems, shooting, damage handling and explosions.
+								shooting, weapons, damage and explosion systems.
 							</li>
 
 							<li>
-								<strong>Progression & persistence:</strong>
-								save/load system tracking unlocked parts, upgrades and
-								player progression.
+								<strong>Progression:</strong>
+								persistent unlock and upgrade system integrated with
+								save/load functionality.
 							</li>
 
 							<li>
-								<strong>Game architecture:</strong>
-								bootstrap scene and initialization flow for persistent
-								game managers and systems.
+								<strong>Architecture:</strong>
+								bootstrap scene and manager initialization for
+								persistent game systems.
 							</li>
 
 							<li>
 								<strong>UI:</strong>
-								deep menu and vehicle customisation interface supporting
-								the game's progression and customization systems.
+								complex menu and vehicle customization interface.
 							</li>
 
 							<li>
-								<strong>Cinematics & presentation:</strong>
-								Cinemachine, Timeline, audio systems, post-processing
-								and environmental presentation.
+								<strong>Presentation:</strong>
+								Cinemachine, Timeline, audio, cinematics and
+								post-processing.
 							</li>
 						</ul>
 
-						<p>
-							<strong>Additional work:</strong>
-							track design, level construction, world building,
-							scenery and gameplay presentation.
-						</p>
-
-						<!-- Replace YouTube URL -->
 						<div class="video">
 							<iframe
 								src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-								title="Featured Game Gameplay"
+								title="THIRD GAME TITLE Gameplay"
 								frameborder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								allowfullscreen>
@@ -280,109 +326,60 @@
 							</li>
 						</ul>
 
-					</div>
+					</article>
 
 
 					<hr />
 
 
-					<!-- OTHER PROJECTS -->
+					<!-- ==================================================
+					     TITANOFONIAS
+					================================================== -->
 
-					<header>
-						<h2>Other Projects</h2>
-					</header>
-
-
-					<div class="row">
-
-						<!-- TITANOFONIAS -->
-
-						<div class="col-6 col-12-mobile">
-
-							<article class="item">
-
-								<a href="#titanofonias" class="image fit scrolly">
-									<img src="images/titanofoniasphoto.png"
-										 alt="Titanofonias"
-										 />
-								</a>
-
-								<header>
-									<h3>Titanofonias</h3>
-									<p>Soulslike Action RPG · Unity · C#</p>
-								</header>
-
-							</article>
-
-						</div>
-
-
-						<!-- CONQUEST -->
-
-						<div class="col-6 col-12-mobile">
-
-							<article class="item">
-
-								<a href="#conquest" class="image fit scrolly">
-									<img src="images/crwphoto.png"
-										 alt="Conquest: Raid Warfare"
-										 />
-								</a>
-
-								<header>
-									<h3>Conquest: Raid Warfare</h3>
-									<p>Strategy / Simulation · Unity · C#</p>
-								</header>
-
-							</article>
-
-						</div>
-
-					</div>
-
-
-					<!-- TITANOFONIAS DETAILS -->
-
-					<div id="titanofonias">
+					<article class="project">
 
 						<header>
 							<h3>Titanofonias</h3>
 
 							<p>
-								Soulslike action RPG focused on responsive combat,
-								enemy AI and character systems.
+								Soulslike Action RPG · Unity · C#
 							</p>
 						</header>
 
+						<span class="image featured">
+							<img src="images/titanofoniasphoto.png"
+								 alt="Titanofonias" />
+						</span>
+
+						<p>
+							Soulslike action RPG focused on responsive combat,
+							character systems and enemy AI.
+						</p>
+
 						<ul>
 							<li>
-								Custom kinematic character controller handling movement,
-								ground detection, slopes, gravity and collision resolution.
+								Custom kinematic character controller handling
+								movement, slopes, gravity and collision resolution.
 							</li>
 
 							<li>
 								Hierarchical player state machine managing movement,
-								combat, blocking, ranged attacks, hit reactions and dodging.
+								combat, blocking, ranged attacks, hit reactions
+								and dodging.
 							</li>
 
 							<li>
-								Animation-synchronized combat systems controlling
-								hit detection, stamina, attack transitions and timing.
+								Animation-synchronized combat controlling hit detection,
+								stamina and attack transitions.
 							</li>
 
 							<li>
-								Modular enemy AI supporting shared behaviours across
-								multiple enemy archetypes and bosses.
+								Modular enemy AI supporting multiple enemy archetypes
+								and boss-specific mechanics.
 							</li>
 
 							<li>
-								Event-driven audio system supporting contextual SFX
-								and dynamic music transitions.
-							</li>
-
-							<li>
-								URP and rendering optimizations to reduce GPU load
-								while maintaining visual quality.
+								URP and rendering optimizations to reduce GPU load.
 							</li>
 						</ul>
 
@@ -416,23 +413,35 @@
 							</li>
 						</ul>
 
-					</div>
+					</article>
 
 
 					<hr />
 
 
-					<!-- CONQUEST DETAILS -->
+					<!-- ==================================================
+					     CONQUEST
+					================================================== -->
 
-					<div id="conquest">
+					<article class="project">
 
 						<header>
 							<h3>Conquest: Raid Warfare</h3>
 
 							<p>
-								Strategy battle simulator and my first shipped Unity project.
+								Strategy / Simulation · Unity · C#
 							</p>
 						</header>
+
+						<span class="image featured">
+							<img src="images/crwphoto.png"
+								 alt="Conquest: Raid Warfare" />
+						</span>
+
+						<p>
+							My first shipped Unity project: a strategy battle simulator
+							where players position units before automated combat.
+						</p>
 
 						<ul>
 							<li>
@@ -441,18 +450,18 @@
 							</li>
 
 							<li>
-								Data-driven unit system using ScriptableObjects to allow
-								new units to be added without modifying core combat logic.
+								Data-driven unit system using ScriptableObjects,
+								allowing new units without modifying core combat logic.
 							</li>
 
 							<li>
-								AI combat resolution handling targeting, attack patterns,
-								abilities and combat outcomes.
+								AI combat resolution handling targeting, attacks
+								and abilities.
 							</li>
 
 							<li>
-								JSON-based persistence system for progression,
-								unlockables and game state.
+								JSON-based persistence for progression, unlockables
+								and game state.
 							</li>
 
 							<li>
@@ -482,14 +491,16 @@
 							</li>
 						</ul>
 
-					</div>
+					</article>
 
 				</div>
+
 			</section>
 
 
-			<!-- About Me -->
-			<section id="about" class="three">
+			<!-- About -->
+			<section id="about" class="four">
+
 				<div class="container">
 
 					<header>
@@ -499,93 +510,34 @@
 					<p>
 						I'm a self-taught Unity developer specializing in C# and
 						gameplay programming. I started developing games in July 2025
-						and have since independently designed and shipped three complete
-						projects.
+						and have since independently designed and shipped three
+						complete projects.
 					</p>
 
 					<p>
 						My work focuses on gameplay systems, AI, state machines,
 						data-driven architecture, combat, persistence and
 						performance-conscious development. I enjoy building systems
-						that are modular, understandable and able to grow with a project.
+						that are modular, understandable and able to grow with
+						a project.
 					</p>
 
 					<p>
-						I'm currently looking for a <strong>Junior Gameplay Programmer
-						or Junior Systems Programmer</strong> position where I can
-						contribute to a professional team and continue developing
-						my programming skills.
+						I'm currently looking for a
+						<strong>Junior Gameplay Programmer</strong> or
+						<strong>Junior Systems Programmer</strong> position where
+						I can contribute to a professional team and continue
+						developing my programming skills.
 					</p>
 
-
-					<hr />
-
-
-					<header>
-						<h2>Technical Skills</h2>
-					</header>
-
-					<div class="row">
-
-						<div class="col-6 col-12-mobile">
-
-							<h3>Programming</h3>
-
-							<p>
-								C# · Object-Oriented Programming · Gameplay Programming
-								· State Machines · AI · Data-Driven Systems
-								· Save/Load Systems · Debugging · Optimization
-							</p>
-
-						</div>
-
-
-						<div class="col-6 col-12-mobile">
-
-							<h3>Unity</h3>
-
-							<p>
-								Unity Engine · Physics · WheelColliders · UI
-								· Animation · Cinemachine · Timeline
-								· ScriptableObjects · Audio · URP
-							</p>
-
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="col-6 col-12-mobile">
-
-							<h3>Tools</h3>
-
-							<p>
-								Git · GitHub · Visual Studio
-							</p>
-
-						</div>
-
-
-						<div class="col-6 col-12-mobile">
-
-							<h3>Development</h3>
-
-							<p>
-								Independent development · Game design · Level design
-								· Prototyping · Testing · Release & publishing
-							</p>
-
-						</div>
-
-					</div>
-
 				</div>
+
 			</section>
 
 
 			<!-- Contact -->
-			<section id="contact" class="four">
+			<section id="contact" class="five">
+
 				<div class="container">
 
 					<header>
@@ -593,9 +545,8 @@
 					</header>
 
 					<p>
-						I'm currently looking for opportunities as a
-						<strong>Junior Gameplay Programmer</strong> or
-						<strong>Junior Systems Programmer</strong>.
+						I'm open to junior programming opportunities and
+						programming-focused collaborations.
 					</p>
 
 					<ul class="actions">
@@ -603,7 +554,7 @@
 						<li>
 							<a href="mailto:speobensimas@gmail.com"
 							   class="button">
-								Email Me
+								Email
 							</a>
 						</li>
 
@@ -637,6 +588,7 @@
 					</ul>
 
 				</div>
+
 			</section>
 
 		</div>
