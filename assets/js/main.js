@@ -121,9 +121,3 @@
 				});
 
 })(jQuery);
-
-// Start with Intro selected when the page first loads.
-$(window).on('load', function() {
-	$('#nav a').removeClass('active');
-	$('#top-link').addClass('active');
-});
