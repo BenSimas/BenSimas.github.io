@@ -2921,19 +2921,21 @@ ul.actions li a {
 */
 
 #footer {
-	width: 100% !important;
-	margin: 0 !important;
-	padding: 2em 0 !important;
-
+	margin-left: 0 !important;
+	width: auto !important;
 	text-align: center !important;
+
+	padding: 2em 0 !important;
 
 	box-sizing: border-box !important;
 }
 
 #footer .copyright {
+	display: block !important;
+
 	width: 100% !important;
 
-	margin: 0 auto !important;
+	margin: 0 !important;
 	padding: 0 !important;
 
 	text-align: center !important;
@@ -2950,77 +2952,32 @@ ul.actions li a {
 	text-align: center !important;
 }
 
+#footer .copyright li:first-child {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+	border-left: 0 !important;
+}
+
 #footer .copyright li::before {
 	display: none !important;
 }
 
 
-/* ---------------------------------------------------------
-   MOBILE
-   --------------------------------------------------------- */
+/* Mobile */
 
 @media screen and (max-width: 736px) {
 
-	#main > section {
-		padding: 2em 0 !important;
-	}
-
-	#top {
-		padding: 2em 0 !important;
-	}
-
-	#top h2 {
-		font-size: 1.3em !important;
-	}
-
-	h2 {
-		font-size: 1.2em !important;
-	}
-
-	h3 {
-		font-size: 1em !important;
-	}
-
-	p,
-	li {
-		font-size: 0.9em !important;
-	}
-
-	ul.actions {
-		justify-content: center !important;
-	}
-
-	ul.actions li {
-		margin: 0.25em !important;
-	}
-
-
-	/* Older projects stack on mobile */
-
-	.older-projects > .col-6 {
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.older-projects > .col-6:first-child {
-		border-right: none;
-
-		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-
-		padding-bottom: 2em;
-		margin-bottom: 2em;
-	}
-
-
-	/* Footer */
-
 	#footer {
+		width: 100% !important;
+		margin-left: 0 !important;
 		padding: 1.5em 0 !important;
 	}
 
 	#footer .copyright li {
 		display: block !important;
 		margin: 0.25em 0 !important;
+		padding: 0 !important;
+		border: 0 !important;
 	}
 
 }
