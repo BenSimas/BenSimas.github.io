@@ -2636,6 +2636,7 @@ input, select, textarea {
    BEN SIMAS PORTFOLIO CUSTOM STYLES
    ========================================================= */
 
+
 /* ---------------------------------------------------------
    GENERAL SPACING
    --------------------------------------------------------- */
@@ -2739,19 +2740,35 @@ li {
 
 
 /* ---------------------------------------------------------
-   LISTS
+   TECHNICAL LISTS
    --------------------------------------------------------- */
 
-/* Normal content lists */
+/*
+   Center the entire list block while keeping each
+   bullet and its text together.
+*/
 
 #main section ul:not(.actions) {
+	display: inline-block !important;
+
 	text-align: left !important;
-	margin-left: 0 !important;
+
+	margin-left: auto !important;
+	margin-right: auto !important;
+
 	padding-left: 1.5em !important;
 }
 
 #main section ul:not(.actions) li {
 	text-align: left !important;
+}
+
+
+/* Make the parent center the list block */
+
+.project ul:not(.actions) {
+	width: fit-content;
+	max-width: 100%;
 }
 
 
@@ -2761,10 +2778,14 @@ li {
 
 ul.actions {
 	display: flex !important;
+
 	flex-direction: row !important;
 	flex-wrap: wrap !important;
+
 	justify-content: center !important;
 	align-items: center !important;
+
+	width: 100% !important;
 
 	margin: 1.5em auto !important;
 	padding: 0 !important;
@@ -2841,7 +2862,7 @@ ul.actions li a {
 
 
 /* ---------------------------------------------------------
-   HORIZONTAL DIVIDERS
+   PROJECT DIVIDERS
    --------------------------------------------------------- */
 
 #projects hr {
@@ -2886,6 +2907,11 @@ ul.actions li a {
 
 	ul.actions li {
 		margin: 0.25em !important;
+	}
+
+	#main section ul:not(.actions) {
+		display: inline-block !important;
+		max-width: 100%;
 	}
 
 }
