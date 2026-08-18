@@ -2915,3 +2915,68 @@ ul.actions li a {
 	}
 
 }
+
+/* ---------------------------------------------------------
+   OLDER PROJECTS - TWO COLUMN LAYOUT
+   --------------------------------------------------------- */
+
+.older-projects {
+	position: relative;
+}
+
+.older-projects > .col-6 {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+/* Vertical divider */
+
+.older-projects > .col-6:first-child {
+	border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* Keep each project visually centered */
+
+.older-projects .project {
+	text-align: center;
+}
+
+.older-projects .project ul:not(.actions) {
+	display: inline-block !important;
+	text-align: left !important;
+	max-width: 100%;
+}
+
+
+/* Slightly smaller images for the compact layout */
+
+.older-projects .image.featured {
+	margin-bottom: 1em !important;
+}
+
+
+/* Remove unnecessary bottom spacing */
+
+.older-projects .project {
+	margin-bottom: 0 !important;
+}
+
+
+/* Mobile: stack projects and remove divider */
+
+@media screen and (max-width: 736px) {
+
+	.older-projects > .col-6 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.older-projects > .col-6:first-child {
+		border-right: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+	}
+
+}
